@@ -15,5 +15,19 @@
 }
 
 body {
-    background-color: var(--var-teste);
+    background-color: green;
+}
+
+/* Media query para tablets */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: orange;
+    }
+}
+
+/* Media query para desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: red;
+    }
 }
