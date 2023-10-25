@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --orange-main: #FF8A00;
+    --orange-hover-bright: #ffbb6e;
+    --orange-hover-dark: #834600;
+
+    --blue-main: #0500FF;
+    --blue-hover-bright: #5c59ff;
+    --blue-hover-dark: #0300a0;
+
+    --green-main: #05FF00;
+    --green-hover-bright: #65ff62;
+    --green-hover-dark: #03a500;
+
+    --gray-main: #D9D9D9;
+    --gray-hover-dark: #8a8a8a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    overflow-y: hidden;
+}
+
+
+/* Media query para tablets */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: orange;
+    }
+}
+
+/* Media query para desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    form{
+        background-color: var(--blue-main);
+        width: 314px;
+        height: 502px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px rgb(0, 0 ,0, 0.25);
+    }
+
+    h1 {
+        color: var(--white);
+        text-align: center;
+        font-size: 40px;
+        margin: 19px auto 33px;
+    }
+
+    label {
+        color: var(--white);
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .container-user, .container-password{
+        margin: 0 auto;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .container-password{
+        margin-top: 25px;
+    }
+
+    input[type="text"]{
+        width: 270px;
+        height: 36px;
+        border-radius: 6px;
+        background: var(--gray-main);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    a {
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 300;
+        text-decoration-line: underline;
+    }
+
+
+}
